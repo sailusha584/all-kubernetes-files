@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config1
+data:
+  APP_COLOR: test devops training
+  APP_COLOR1: testing

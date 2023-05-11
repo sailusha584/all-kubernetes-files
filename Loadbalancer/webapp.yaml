@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+spec:
+  selector:
+    app: web-app
+  type: LoadBalancer
+  loadBalancerIP: 203.0.113.0
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 80
+      protocol: TCP
